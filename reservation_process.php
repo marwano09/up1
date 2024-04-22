@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if (mysqli_stmt_execute($insert_stmt)) {
                     // Reservation successful, show alert and redirect
                     echo "<script>alert('Your reservation is complete. We will call you to confirm.')</script>";
-                    echo "<script>window.location.href = 'blog.php';</script>";
+                    echo "<script>window.location.href = 'index.html';</script>";
                     exit;
                 } else {
                     echo "Error: " . mysqli_error($conn);
